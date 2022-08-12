@@ -13,7 +13,10 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
+    let messages = [Message(sender: "Rahul", body: "Hello"),Message(sender: "Rahul", body: "Hi"),Message(sender: "Rahul", body: "Wassup"),]
+    
     override func viewDidLoad() {
+        title = K.title
         super.viewDidLoad()
 
     }
